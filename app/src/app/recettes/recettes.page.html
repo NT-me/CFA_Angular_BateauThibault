@@ -1,0 +1,61 @@
+<ion-app>
+  <ion-content class="ion-padding">
+
+    <div class="corpsText">
+      <h1>Nos recettes</h1>
+
+
+      <p>Vente en direct de notre bateau Produits selon la saison, Livraisons sur paris</p>
+      <p> 06.00.00.00.00</p>
+      <p>bateauthibault@gmail.com</p>
+      <p>www.facebook.com/lebateauthibault</p>
+    </div>
+
+      <div class="col text-center">
+        <ion-grid>
+          <ion-row class="sousEnsembleBoutons">
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" [routerLink]="['/homard']" expand="full"><img class="buttonIcon" src="../../assets/icons/homardRecette_icon.png">Homard</ion-button>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full" [routerLink]="['/st-jacques']"><img class="buttonIcon" src="../../assets/icons/saintJacques_icon.png">St Jacques</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="sousEnsembleBoutons">
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" [routerLink]="['/bar']" expand="full"><img class="buttonIcon" src="../../assets/icons/barRecette_icon.png">Bar</ion-button>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full" [routerLink]="['/tourteau']"><img class="buttonIcon" src="../../assets/poulpe.png">Tourteau</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="sousEnsembleBoutons">
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full" [routerLink]="['/recette']"><img class="buttonIcon" src="../../assets/poulpe.png">Recette</ion-button>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full"  [routerLink]="['/recette']"><img class="buttonIcon" src="../../assets/poulpe.png">Recette</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+      </div>
+
+
+
+  </ion-content>
+</ion-app>

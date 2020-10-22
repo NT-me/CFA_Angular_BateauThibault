@@ -1,6 +1,83 @@
 // Ionic Variables and Theming. For more info, please see:
 // http://ionicframework.com/docs/theming/
 
+/** Perso **/
+
+.buttonPerso{
+  height:7em;
+  border-style: solid;
+  border-color: rgb(211,211,211);
+  border-width: 1px;
+  --ion-color-primary: rgba(211,211,211,0.5);
+  --ion-color-primary-rgb: 66,140,255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-contrast-rgb: 255,255,255;
+  --ion-color-primary-shade: #3a7be0;
+  --ion-color-primary-tint: #5598ff;
+}
+
+.buttonIcon{
+  height:5em;
+  width: 5em;
+  margin-right: 1em;
+}
+
+ion-content{
+    --background: #fff url('../assets/background.png') no-repeat center center / cover;
+}
+
+.corpsText{
+  flex:1;
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.corpsText h1{
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.corpsText p{
+  color : black;
+}
+
+.ensembleBoutons {
+  align-items:center;
+}
+
+.sousEnsembleBoutons{
+  align-items:center;
+  justify-content: center;
+}
+
+.mimage {
+  flex: 4;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 2em;
+}
+
+.pageContent {
+  text-align: center;
+  // font-size: 0.5em;
+}
+
+.pageContent h1 {
+  color: #fbfbe5;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.pageContent h2 {
+  color: black;
+  margin-top: 2em;
+  margin-bottom: 4em;
+  font-size: 1.5em;
+}
+.pageContent p{
+  color : black;
+}
+
+
 /** Ionic CSS Variables **/
 :root {
   /** primary **/

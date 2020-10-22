@@ -1,20 +1,56 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <ion-content class="ion-padding">
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <div class="corpsText">
+      <h1>Le bateau Thibault</h1>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
-</ion-content>
+
+      <p>Vente en direct de notre bateau Produits selon la saison, Livraisons sur paris</p>
+      <p> 06.00.00.00.00</p>
+      <p>bateauthibault@gmail.com</p>
+      <p>www.facebook.com/lebateauthibault</p>
+    </div>
+
+      <div class="col text-center">
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full" [routerLink]="['/test-page']"><img class="buttonIcon" src="../../assets/poisson.png">Produits et promotions</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+          
+          <ion-row class="sousEnsembleBoutons">
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" [routerLink]="['/bateaux']" expand="full"><img class="buttonIcon" src="../../assets/ancre.png">Bateaux</ion-button>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full" [routerLink]="['/restaurants']"><img class="buttonIcon" src="../../assets/restaurant.png">Restaurants</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+
+          <ion-row class="sousEnsembleBoutons">
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full" [routerLink]="['/recettes']"><img class="buttonIcon" src="../../assets/recette.png">Recettes</ion-button>
+              </div>
+            </ion-col>
+            <ion-col>
+              <div>
+                <ion-button class="buttonPerso" expand="full"  [routerLink]="['/contact']"><img class="buttonIcon" src="../../assets/tourteau.png">Contact</ion-button>
+              </div>
+            </ion-col>
+          </ion-row>
+
+        </ion-grid>
+      </div>
+
+
+
+  </ion-content>
+</ion-app>
