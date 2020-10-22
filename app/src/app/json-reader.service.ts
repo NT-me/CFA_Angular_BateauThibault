@@ -10,6 +10,6 @@ export class JsonReaderService {
   }
 
   public getData(){
-    return http.get<any[]>("../assets/data.json");
+    return this.http.get<any[]>("../assets/data.json");
   }
 }

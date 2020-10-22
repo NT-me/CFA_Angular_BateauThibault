@@ -87,6 +87,14 @@ const routes: Routes = [
     path: 'recette',
     loadChildren: () => import('./recipes/recette/recette.module').then( m => m.RecettePageModule)
   },
+  {
+    path: 'display-products/:catId',
+    loadChildren: () => import('./display-products/display-products.module').then( m => m.DisplayProductsPageModule)
+  },
+  {
+    path: 'products',
+    loadChildren: () => import('./products/products.module').then( m => m.ProductsPageModule)
+  },
 ];
 
 @NgModule({

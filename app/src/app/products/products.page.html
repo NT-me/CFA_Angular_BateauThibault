@@ -1,0 +1,5 @@
+<ion-content>
+
+  <ion-button class="buttonPerso" *ngFor="let item of categoryList" [routerLink]="['/display-products',item.id]" expand="full"><img class="buttonIcon" src="../../assets/poulpe.png">{{item.name}}</ion-button>
+
+</ion-content>
