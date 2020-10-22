@@ -1,6 +1,6 @@
 <ion-content>
-  <ul>
-      <p> {{ id }}</p>
-      <li *ngFor="let item of productsList">{{ item.name }}</li>
-  </ul>
+
+  <ion-button class="buttonPerso" *ngFor="let item of productsList" expand="full"><img class="buttonIcon" src="../../assets/poulpe.png">{{item.name}}  <ion-button (click)="test()">+</ion-button> <ion-button>-</ion-button></ion-button>
+
+
 </ion-content>

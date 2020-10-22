@@ -35,4 +35,8 @@ export class DisplayProductsPage implements OnInit {
       });
 
   }
+
+  public test(){
+    console.log("Hellow World");
+  }
 }
