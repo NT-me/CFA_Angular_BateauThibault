@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" [routerLink]="['/home']">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Récapitulatif de votre commande :
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button class="buttonPerso" *ngFor="let item of elementList">
+      <img class="buttonIcon" src="../../assets/poulpe.png">
+        {{item.value.name}} &nbsp;&nbsp;&nbsp;
+      <!-- <ion-button (click)="updateQuantity('ADD', item.id)">+</ion-button> -->
+      &nbsp; {{item.value.quantity}} &nbsp;
+      <!-- <ion-button (click)="updateQuantity('DEC', item.id)">-</ion-button> -->
+      x {{item.value.price}}€
+  </ion-button>
+</ion-content>
+
+<ion-footer class="success">
+  <p style="color: white">
+    Total de votre commande : {{this.sousTotalFun()}} €
+  </p>
+  <ion-list>
+    <ion-item>
+      <ion-label style="text-align:center">
+        Choissisez votre restaurant
+      </ion-label>
+        <ion-select value="resto" (ionChange)="commandePassee()">
+          <ion-select-option value="bistrot-des-gascons">Bistrot des Gascons</ion-select-option>
+          <ion-select-option value="bistrot-du-sommelier">Bistrot du Sommelier</ion-select-option>
+          <ion-select-option value="bistrot-landais">Bistrot Landais</ion-select-option>
+          <ion-select-option value="les-fous-de-lile">Les fous de l'île</ion-select-option>
+          <ion-select-option value="villa9-trois">Villa 9-Trois</ion-select-option>
+        </ion-select>
+    </ion-item>
+  </ion-list>
+</ion-footer>

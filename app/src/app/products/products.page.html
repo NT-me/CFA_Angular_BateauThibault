@@ -1,3 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" [routerLink]="['/home']">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" [routerLink]="['/cart']">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-button>
+
+    <ion-title>
+      Choissisez votre catégorie de produits :
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
 
   <ion-button class="buttonPerso" *ngFor="let item of categoryList" [routerLink]="['/display-products',item.id]" expand="full"><img class="buttonIcon" src="../../assets/poulpe.png">{{item.name}}</ion-button>

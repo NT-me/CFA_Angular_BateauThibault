@@ -1,6 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" [routerLink]="['/home']">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-button>
+    <ion-button slot="end" [routerLink]="['/cart']">
+      <ion-icon name="cart-outline"></ion-icon>
+    </ion-button>
+
+    <ion-title>
+      Choissisez vos produits :
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content>
 
-  <ion-button class="buttonPerso" *ngFor="let item of productsList" expand="full"><img class="buttonIcon" src="../../assets/poulpe.png">{{item.name}}  <ion-button (click)="test()">+</ion-button> <ion-button>-</ion-button></ion-button>
 
+  <ion-button class="buttonPerso" *ngFor="let item of productsList" expand="full">
+      <img class="buttonIcon" src="../../assets/poulpe.png">
+        {{item.name}} &nbsp;&nbsp;&nbsp;
+      <ion-button (click)="updateQuantity('ADD', item.id)">+</ion-button>
+      &nbsp; {{this.data[item.id]}} &nbsp;
+      <ion-button (click)="updateQuantity('DEC', item.id)">-</ion-button>
+      x {{item.price}}€
+  </ion-button>
 
 </ion-content>
